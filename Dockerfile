@@ -7,6 +7,6 @@ RUN apt-get update && \
     # Build the application
 WORKDIR /app/HelloWorld-Java
 # copy the packaged jar file into our docker image
-RUN cp HelloWorld-Java/HelloWorld.jar . .
+#RUN cp HelloWorld-Java/HelloWorld.jar . .
 # set the startup command to execute the jar
 CMD ["java", "-jar", "/HelloWorld.jar"]
