@@ -1,6 +1,6 @@
 # we will use openjdk 17 
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY HelloWorld-Java/HelloWorld.jar . .
+COPY /HelloWorld.jar . .
 # set the startup command to execute the jar
 CMD ["java", "-jar", "/HelloWorld.jar"]
